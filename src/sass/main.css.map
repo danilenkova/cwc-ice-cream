@@ -1,0 +1,25 @@
+{
+    "version": 3,
+    "mappings": "AKAA,AAAA,gBAAgB,AAAA,IAAK,CAAA,MAAM,CAAC,IAAK,CAAA,OAAO,EAAE;EACxC,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;EACX,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,WAAW,EAAE,MAAM;EACnB,SAAS,EAAE,WAAW;EACtB,IAAI,EAAE,aAAa;EACnB,QAAQ,EAAE,MAAM;CACjB;;ACVD,AAAA,IAAI,CAAC;EACH,WAAW,ELAD,EAAE,CAAC,IAAI,EAAE,UAAU;EKC7B,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;CAChB;;AAED,AAAA,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;CACV;;AAED,AAAA,GAAG,CAAC;EACF,OAAO,EAAE,KAAK;EACd,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,IAAI;CACb;;ACpBD,AAAA,UAAU,CAAC;EACT,OAAO,EAAE,KAAK;EACd,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;EAClB,UAAU,EAAE,CAAC;EACb,aAAa,EAAE,CAAC;EAChB,OAAO,EAAE,MAAM;CAchB;;AAbC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAPrC,AAAA,UAAU,CAAC;IAQP,SAAS,EAAE,KAAK;GAYnB;;;AATC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAXrC,AAAA,UAAU,CAAC;IAYP,OAAO,EAAE,MAAM;IACf,SAAS,EAAE,KAAK;GAOnB;;;AAJC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAhBtC,AAAA,UAAU,CAAC;IAiBP,OAAO,EAAE,OAAO;IAChB,SAAS,EAAE,MAAM;GAEpB",
+    "sources": [
+        "main.scss",
+        "utils/_variables.scss",
+        "utils/_breakpoints.scss",
+        "utils/_mixins.scss",
+        "utils/_placeholders.scss",
+        "utils/_visually-hidden.scss",
+        "base/_common.scss",
+        "base/_conteiner.scss",
+        "layout/_header.scss",
+        "layout/_hero.scss",
+        "layout/_products.scss",
+        "layout/_about.scss",
+        "layout/_advantage.scss",
+        "layout/_gallery.scss",
+        "layout/_reviews.scss",
+        "layout/_contacts.scss",
+        "layout/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
