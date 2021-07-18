@@ -2,11 +2,13 @@
     position: relative;
     bottom: 84px;
 }
-
+.contacty {
+    background-color:  $section-bg-color;
+}
 
 .contact {
     display: block;
-    background-color:  $section-bg-color;
+    
     justify-content: center;
     list-style: none;
     padding: 0;
