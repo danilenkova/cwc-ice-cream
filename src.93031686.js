@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/icons/dots.svg":[["dots.45270de8.svg","Y6Ha"],"Y6Ha"],"./../images/products/icecream.png":[["icecream.ed09bafb.png","yZIY"],"yZIY"],"./../images/products/icecoffee.png":[["icecoffee.91b41aa2.png","Z7db"],"Z7db"],"./../images/products/milkshakes.png":[["milkshakes.3fab27d0.png","zc84"],"zc84"],"./../images/about/milk.png":[["milk.54be24b1.png","Qqob"],"Qqob"],"./../images/about/milk@2x.png":[["milk@2x.f40ea7be.png","Rjnv"],"Rjnv"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/cwc-ice-cream/src.92302e87.js.map
+//# sourceMappingURL=/cwc-ice-cream/src.93031686.js.map
