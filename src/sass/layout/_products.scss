@@ -1,0 +1,233 @@
+.products {
+  padding-top: 120px;
+}
+.products-cards {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: -20px;
+  }
+}
+.products-label {
+  font-family: $accent-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $list-color;
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+  }
+}
+.products-title {
+  font-family: $accent-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $red-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+  }
+}
+.products-cards__list {
+  display: inline-block;
+  width: 100%;
+  max-width: 280px;
+  margin-top: 20px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100%-60px) / 3);
+    margin-left: 20px;
+    max-width: 220px;
+  }
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc((100% - 60px) / 3);
+    max-width: 335px;
+  }
+}
+
+.products-cards__title::after {
+  margin: 30px auto;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 26px;
+  height: 6px;
+  content: '';
+  background-size: contain;
+  background-image: url('../images/icons/dots.svg');
+}
+.products-cards__icecream {
+  position: relative;
+  height: 485px;
+  padding-top: 160px;
+  background: $pink-color;
+  border-radius: 24px;
+  margin-bottom: 130px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 525px;
+  }
+
+  &::before {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translate(0%, -125%);
+    left: 0;
+    top: 200px;
+    display: inline-block;
+    width: 100%;
+    height: 252px;
+    content: '';
+    background-size: contain;
+    background-image: url('../images/products/icecream.png');
+
+    @media screen and (min-width: 1280px) {
+      height: 335px;
+    }
+  }
+}
+.products-cards__icecoffee {
+  position: relative;
+  height: 485px;
+  padding-top: 160px;
+  background: $sun-color;
+  border-radius: 24px;
+  margin-bottom: 130px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 525px;
+  }
+
+  &::before {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translate(0%, -45%);
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 100%;
+    height: 252px;
+    content: '';
+    background-size: contain;
+    background-image: url('../images/products/icecoffee.png');
+
+    @media screen and (min-width: 1280px) {
+      height: 335px;
+      transform: translate(0%, -65%);
+    }
+  }
+}
+.products-cards__milkshakes {
+  padding-top: 160px;
+  height: 485px;
+  background: $green-color;
+  border-radius: 24px;
+  position: relative;
+
+  @media screen and (min-width: 1280px) {
+    height: 525px;
+  }
+
+  &::before {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translate(0%, -45%);
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 100%;
+    height: 252px;
+    content: '';
+    background-size: contain;
+    background-image: url('../images/products/milkshakes.png');
+
+    @media screen and (min-width: 1280px) {
+      height: 335px;
+      transform: translate(0%, -65%);
+    }
+  }
+}
+.products-wrapper {
+  display: block;
+  padding-bottom: 140px;
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 260px;
+  }
+}
+
+.products-cards__title {
+  font-family: $accent-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $white-color;
+}
+.products-cards__text {
+  font-family: $main-font;
+  padding: 0 40px;
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 152%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $white-color;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 10px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 0 40px;
+    margin-bottom: 60px;
+  }
+}
+.products-cards__button {
+  background-color: $white-color;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: $red-color;
+  }
+}
