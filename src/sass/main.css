@@ -61,4 +61,138 @@ img {
     max-width: 1280px;
   }
 }
+
+.contact__none {
+  display: none;
+}
+
+.contact {
+  display: block;
+  background-color: #fff5f6;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact__link {
+  width: 220px;
+  height: 427px;
+  -webkit-box-shadow: 0px 8px 8px 8px rgba(212, 20, 67, 0.1);
+          box-shadow: 0px 8px 8px 8px rgba(212, 20, 67, 0.1);
+  background-color: #ffffff;
+  border-radius: 24px;
+}
+
+.contact__link:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contact__text {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #907e82;
+  margin-top: 10px;
+}
+
+.contact__team {
+  color: #000000;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+
+.contact__item {
+  color: #ffa5ba;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.contact__list {
+  width: 80px;
+  height: 16px;
+  background-color: #f0d1a5;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  margin-bottom: 25px;
+}
+
+.contact__listy {
+  width: 80px;
+  height: 16px;
+  background-color: #C2E297;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  margin-bottom: 25px;
+}
+
+.contact__title {
+  padding-top: 43px;
+  padding-bottom: 43px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.week {
+  border-top: 1px solid #E1E1E1;
+  border-bottom: 1px solid #E1E1E1;
+  width: 179px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.week__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.week__item {
+  color: #ffa5ba;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.week__team {
+  color: #000000;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
 /*# sourceMappingURL=main.css.map */
