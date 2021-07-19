@@ -1,0 +1,152 @@
+.reviews {
+  @media screen and(min-width:320px) and(max-width:767px) {
+    margin-top: 80px;
+    margin-bottom: 289px;
+  }
+  @media screen and(min-width:768px) and(max-width:1279px) {
+    margin-top: 121px;
+    margin-bottom: 197px;
+  }
+  @media screen and(min-width:1280px) {
+    margin-top: 123px;
+    margin-bottom: 234px;
+  }
+}
+.reviews__img {
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and(min-width:320px) and(max-width:767px) {
+    margin-bottom: 29px;
+  }
+  @media screen and(min-width:768px) and(max-width:1279px) {
+    margin-bottom: 19px;
+  }
+  @media screen and(min-width:1280px) {
+    margin-bottom: 15px;
+  }
+}
+.reviews__box {
+  position: relative;
+  background-color: $reviews-bg-color;
+  @media screen and(min-width:320px) and(max-width:767px) {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  @media screen and(min-width:768px) and(max-width:1279px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 620px;
+    height: 100%;
+    margin-bottom: 24px;
+  }
+  @media screen and(min-width:1280px) {
+    width: 926px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 34px;
+  }
+}
+.reviews__text {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  color: $black-color;
+  text-align: center;
+  background-image: repeating-linear-gradient(
+    to top,
+    $line-color,
+    $line-color 1px,
+    transparent 1px,
+    transparent 31px
+  );
+  @media screen and(min-width:320px) and(max-width:767px) {
+    font-size: 12px;
+    line-height: 2.58;
+    letter-spacing: 0.03em;
+    margin-left: 57px;
+    margin-right: 66px;
+    margin-top: 43px;
+    margin-bottom: 28px;
+  }
+  @media screen and(min-width:768px) and(max-width:1279px) {
+    width: 460px;
+    font-size: 14px;
+    line-height: 2.16;
+    letter-spacing: 0.04em;
+    margin-top: 47px;
+    margin-bottom: 34px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  @media screen and(min-width:1280px) {
+    width: 750px;
+    margin-top: 47px;
+    margin-bottom: 39px;
+    margin-left: 87px;
+    margin-right: 89px;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+  }
+}
+.reviews__text::before {
+  content: url('/src/images/icons/quotes.svg');
+  position: absolute;
+  fill: rgba(225, 225, 225, 0.3);
+  @media screen and(min-width:320px) and(max-width:767px) {
+    top: 25px;
+    left: 61px;
+  }
+  @media screen and(min-width:768px) and(max-width:1279px) {
+    top: 30px;
+    left: 40px;
+  }
+  @media screen and(min-width:1280px) {
+    top: 32px;
+    left: 40px;
+  }
+}
+.reviews__contact {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: $black-color;
+  text-align: center;
+  line-height: 1.86;
+  @media screen and(min-width:320px) and(max-width:767px) {
+    font-size: 12px;
+  }
+  @media screen and(min-width:768px) and(max-width:1279px) {
+    font-size: 16px;
+  }
+  @media screen and(min-width:1280px) {
+    font-size: 20px;
+  }
+}
+.reviews__contact::before {
+  content: url('/src/images/icons/dots.svg');
+  @media screen and(min-width:320px) and(max-width:767px) {
+    fill: $dots-color;
+    padding-bottom: 18px;
+  }
+  @media screen and(min-width:768px) and(max-width:1279px) {
+    fill: $dots-color;
+    padding-bottom: 14px;
+  }
+  @media screen and(min-width:1280px) {
+    fill: $dots-color;
+    padding-bottom: 15px;
+  }
+}
+.reviews__contact::after {
+  content: url('/src/images/icons/reviews-after.svg');
+  @media screen and(min-width:320px) and(max-width:767px) {
+    padding-top: 30px;
+  }
+  @media screen and(min-width:768px) {
+    padding-top: 35px;
+  }
+}
