@@ -127,17 +127,14 @@
   }
 }
 .reviews__contact::before {
-  content: url('/src/images/icons/dots.svg');
+  content: url('/src/images/icons/dod-rev.svg');
   @media screen and(min-width:320px) and(max-width:767px) {
-    fill: $dots-color;
     padding-bottom: 18px;
   }
   @media screen and(min-width:768px) and(max-width:1279px) {
-    fill: $dots-color;
     padding-bottom: 14px;
   }
   @media screen and(min-width:1280px) {
-    fill: $dots-color;
     padding-bottom: 15px;
   }
 }
