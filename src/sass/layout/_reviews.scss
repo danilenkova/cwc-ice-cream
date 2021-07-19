@@ -93,7 +93,7 @@
   }
 }
 .reviews__text::before {
-  content: url('/src/images/icons/quotes.svg');
+  content: url('../images/icons/quotes.svg');
   position: absolute;
   fill: rgba(225, 225, 225, 0.3);
   @media screen and(min-width:320px) and(max-width:767px) {
@@ -127,7 +127,7 @@
   }
 }
 .reviews__contact::before {
-  content: url('/src/images/icons/dod-rev.svg');
+  content: url('../images/icons/dod-rev.svg');
   @media screen and(min-width:320px) and(max-width:767px) {
     padding-bottom: 18px;
   }
@@ -139,7 +139,7 @@
   }
 }
 .reviews__contact::after {
-  content: url('/src/images/icons/reviews-after.svg');
+  content: url('../images/icons/reviews-after.svg');
   @media screen and(min-width:320px) and(max-width:767px) {
     padding-top: 30px;
   }
