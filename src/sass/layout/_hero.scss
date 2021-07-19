@@ -4,69 +4,68 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  background-color: $pink-color;
-  background-image: url(../images/hero/heroicecream.png), url(../images/hero/hero-circle.png);
-  background-repeat: no-repeat;
-  background-size: 171px, 284px;
-  background-position: bottom 0 right 32px, bottom 75px right 0;
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/hero/heroicecream@2x.png),
-      url(../images/hero/hero-circle@2x.png);
-  }
   @media screen and (min-width: 768px) {
     height: 400px;
-    background-image: url(../images/hero/heroicecream-tablet.png), url(../images/hero/girl.png),
-      url(../images/hero/hero-circle-tablet.png), url(../images/hero/heromilk.png);
-    background-size: 143px, 168px, 324px, 124px;
-    background-position: bottom 0 right 247px, bottom 0 right 34px, bottom 46px right 137px,
-      bottom 28px left 34px;
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/hero/heroicecream-tablet@2x.png),
-        url(../images/hero/girl@2x.png), url(../images/hero/hero-circle-tablet@2x.png),
-        url(../images/hero/heromilk@2x.png);
-    }
   }
   @media screen and (min-width: 1280px) {
     height: 665px;
-    background-image: url(../images/hero/heroicecream-desc.png), url(../images/hero/girl-desc.png),
-      url(../images/hero/hero-circle-desc.png), url(../images/hero/heromilk-desc.png);
-    background-size: 236px, 293px, 538px, 188px;
-    background-position: bottom 0 right 450px, bottom 0 right 109px, bottom 75px right 267px,
-      bottom 45px left 77px;
+  }
+  &__container {
+    height: 500px;
+    padding-top: 195px;
+    padding-bottom: 155px;
+    text-align: left;
+    background-color: $pink-color;
+    background-image: url(../images/hero/heroicecream.png), url(../images/hero/hero-circle.png);
+    background-repeat: no-repeat;
+    background-size: 171px, 284px;
+    background-position: bottom 0 right 32px, bottom 75px right 0;
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/hero/heroicecream-desc@2x.png),
-        url(../images/hero/girl-desc@2x.png), url(../images/hero/hero-circle-desc@2x.png),
-        url(../images/hero/heromilk-desc@2x.png);
+      background-image: url(../images/hero/heroicecream@2x.png),
+        url(../images/hero/hero-circle@2x.png);
     }
-  }
-  &__container {
-    height: 665px;
-    padding-top: 195px;
-    padding-bottom: 200px;
-    text-align: left;
     @media screen and (min-width: 768px) {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       height: 400px;
       padding-top: 100px;
-
       padding-bottom: 35px;
+      background-image: url(../images/hero/heroicecream-tablet.png), url(../images/hero/girl.png),
+        url(../images/hero/hero-circle-tablet.png), url(../images/hero/heromilk.png);
+      background-size: 143px, 168px, 324px, 124px;
+      background-position: bottom 0 right 247px, bottom 0 right 34px, bottom 46px right 137px,
+        bottom 28px left 34px;
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/hero/heroicecream-tablet@2x.png),
+          url(../images/hero/girl@2x.png), url(../images/hero/hero-circle-tablet@2x.png),
+          url(../images/hero/heromilk@2x.png);
+      }
     }
     @media screen and (min-width: 1280px) {
       height: 665px;
       padding-top: 170px;
       padding-right: 95px;
       padding-bottom: 55px;
+      background-image: url(../images/hero/heroicecream-desc.png), url(../images/hero/girl-desc.png),
+        url(../images/hero/hero-circle-desc.png), url(../images/hero/heromilk-desc.png);
+      background-size: 236px, 293px, 538px, 188px;
+      background-position: bottom 0 right 450px, bottom 0 right 109px, bottom 75px right 267px,
+        bottom 45px left 77px;
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/hero/heroicecream-desc@2x.png),
+          url(../images/hero/girl-desc@2x.png), url(../images/hero/hero-circle-desc@2x.png),
+          url(../images/hero/heromilk-desc@2x.png);
+      }
     }
   }
   &__title {
