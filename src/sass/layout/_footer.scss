@@ -1,6 +1,10 @@
 li {
     list-style: none;;
 }
+ul {
+    margin: 0;
+    
+}
 .footer {
     background-color: $section-bg-color;
 &-button {
@@ -11,6 +15,7 @@ li {
    
    }
 &-button__link{
+    padding: 0;
    @media screen and (min-width: 768px){
        display: flex;
        justify-content: center;
@@ -49,8 +54,14 @@ li {
 }
 }
 .site-footer {
+    @media screen and (min-width: 1280px) {
+        width: 474px
+    }
     
-
+&__link {
+    padding: 0;
+    
+}
 &__item {
    font-family: Titan One;
    font-size: 18px;
@@ -59,6 +70,18 @@ li {
    line-height: 21px;
    color: $list-color;
    width: 232px;
+   @media screen and (min-width: 1280px) {
+     width: 100%;
+      
+       font-family: Titan One;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: 34px;
+letter-spacing: 0.04em;
+
+
+   }
 }
 &__team {
    font-family: Titan One;
@@ -66,45 +89,68 @@ li {
    font-style: normal;
    font-weight: 400;
    line-height: 39px;
-   letter-spacing: 0.04em;
+ 
    text-align: left;
 color: $red-color;
-width: 200px;    
+width: 200px;  
+@media screen and (min-width: 1280px) {
+    width: 100%;
+    font-family: Titan One;
+font-size: 58px;
+font-style: normal;
+font-weight: 400;
+line-height: 66px;
+margin-top: 15px;
+
+
+}  
 }
 }
 .social-footer {
     text-align: right;
-<<<<<<< Updated upstream
     margin-top: 43px;
-=======
-    
->>>>>>> Stashed changes
     margin-left: 20px;
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+    }
+    
 &__title {
    font-family: DM Sans;
    font-size: 12px;
    font-style: normal;
    font-weight: 700;
    line-height: 22px;
-   
+   margin-top: 46px;
+   text-align: right;
+   @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-bottom: 46px;
+}
+@media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 30px;
+}
+}
+&__item {
+    padding: 0;
 }
 &__tell {
     color: $red-color;
     cursor: pointer;
 }
-<<<<<<< Updated upstream
-}
-=======
 &__link {
     display: flex;
+    justify-content: flex-end;
+    padding: 0;
 }
 &__list {
     margin-left: 25px;
     fill: $social-color;
+    
 }
 }
 
->>>>>>> Stashed changes
+
 .footer-made {
     border-top: 1px solid #E1E1E1;
     margin-top: 43px;
@@ -116,8 +162,4 @@ width: 200px;
 color: $text-color;
 font-weight: 700;
 }
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes
