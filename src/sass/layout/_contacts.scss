@@ -2,8 +2,10 @@
     position: relative;
     bottom: 84px;
 }
-.contacty {
+.contacts {
     background-color:  $section-bg-color;
+    
+    
 }
 
 .contact {
@@ -17,9 +19,13 @@
         display: flex;
        
     }
-    @media screen and (min-width: 1280px){
-        background-image: url();
+   
+   &__icon {
+    @media screen and (min-width: 1280px) {
+        background-image: url(../images/contacts/contacts.png);
+        background-repeat: no-repeat;
     }
+   }
     &__none {
         display: none;
         

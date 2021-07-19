@@ -5,6 +5,9 @@ ul {
     margin: 0;
     
 }
+.footer-section {
+    background-color:  $section-bg-color;
+}
 .footer {
     background-color: $section-bg-color;
 &-button {
@@ -70,6 +73,9 @@ ul {
    line-height: 21px;
    color: $list-color;
    width: 232px;
+   &::before {
+    background-image: url(../images/icons/quotes.svg);
+}
    @media screen and (min-width: 1280px) {
      width: 100%;
       
@@ -113,7 +119,7 @@ margin-top: 15px;
     @media screen and (min-width: 768px) {
         margin-top: 0;
     }
-    
+     
 &__title {
    font-family: DM Sans;
    font-size: 12px;
@@ -146,6 +152,14 @@ margin-top: 15px;
 &__list {
     margin-left: 25px;
     fill: $social-color;
+    
+        transition-property: fill;
+        transition: transform 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:focus, &:hover {
+            fill: $red-color;
+        }
+    
     
 }
 }
