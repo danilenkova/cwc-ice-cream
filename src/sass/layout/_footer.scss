@@ -1,27 +1,26 @@
 li {
-    list-style: none;;
+  list-style: none;
 }
 .footer {
-    background-color: $section-bg-color;
-&-button {
-    display: block ;
+  background-color: $section-bg-color;
+  &-button {
+    display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-   
-   }
-&-button__link{
-   @media screen and (min-width: 768px){
-       display: flex;
-       justify-content: center;
-   }
-}
-&-button__list {
-   @media screen and (min-width: 768px) {
-       margin: 10px;
-   }
-}
-    &-button__disable {  
+  }
+  &-button__link {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &-button__list {
+    @media screen and (min-width: 768px) {
+      margin: 10px;
+    }
+  }
+  &-button__disable {
     width: 161px;
     height: 44px;
     background-color: $btn-color;
@@ -30,94 +29,81 @@ li {
     margin-bottom: 10px;
     border: none;
     cursor: pointer;
-}
-&-button__active {
-   width: 161px;
-   height: 44px;
-   background-color: $white-color;
-   color: $btn-color;
-   border-radius: 22px;
-   border: none;
-   cursor: pointer;
-}
-&-link {
+  }
+  &-button__active {
+    width: 161px;
+    height: 44px;
+    background-color: $white-color;
+    color: $btn-color;
+    border-radius: 22px;
+    border: none;
+    cursor: pointer;
+  }
+  &-link {
     margin-top: 100px;
     @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: space-between;
+      display: flex;
+      justify-content: space-between;
     }
-}
+  }
 }
 .site-footer {
-    
-
-&__item {
-   font-family: Titan One;
-   font-size: 18px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 21px;
-   color: $list-color;
-   width: 232px;
-}
-&__team {
-   font-family: Titan One;
-   font-size: 34px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 39px;
-   letter-spacing: 0.04em;
-   text-align: left;
-color: $red-color;
-width: 200px;    
-}
+  &__item {
+    font-family: Titan One;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    color: $list-color;
+    width: 232px;
+  }
+  &__team {
+    font-family: Titan One;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: $red-color;
+    width: 200px;
+  }
 }
 .social-footer {
-    text-align: right;
-<<<<<<< Updated upstream
-    margin-top: 43px;
-=======
-    
->>>>>>> Stashed changes
-    margin-left: 20px;
-&__title {
-   font-family: DM Sans;
-   font-size: 12px;
-   font-style: normal;
-   font-weight: 700;
-   line-height: 22px;
-   
-}
-&__tell {
+  text-align: right;
+
+  margin-top: 43px;
+
+  margin-left: 20px;
+  &__title {
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+  }
+  &__tell {
     color: $red-color;
     cursor: pointer;
-}
-<<<<<<< Updated upstream
-}
-=======
-&__link {
+  }
+  &__link {
     display: flex;
-}
-&__list {
+  }
+  &__list {
     margin-left: 25px;
     fill: $social-color;
-}
+  }
 }
 
->>>>>>> Stashed changes
 .footer-made {
-    border-top: 1px solid #E1E1E1;
-    margin-top: 43px;
-    padding-top: 22px;
-    padding-bottom: 25px;
-    text-align: center;
-    display: block;
-&__text {
-color: $text-color;
-font-weight: 700;
+  border-top: 1px solid #e1e1e1;
+  margin-top: 43px;
+  padding-top: 22px;
+  padding-bottom: 25px;
+  text-align: center;
+  display: block;
+  &__text {
+    color: $text-color;
+    font-weight: 700;
+  }
 }
-<<<<<<< Updated upstream
-}
-=======
-}
->>>>>>> Stashed changes
