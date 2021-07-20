@@ -4,26 +4,36 @@ li {
 ul {
   margin: 0;
 }
+
+.footer-section {
+  background-color: $section-bg-color;
+}
+
 .footer {
   background-color: $section-bg-color;
+
   &-button {
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
   }
+
   &-button__link {
     padding: 0;
+
     @media screen and (min-width: 768px) {
       display: flex;
       justify-content: center;
     }
   }
+
   &-button__list {
     @media screen and (min-width: 768px) {
       margin: 10px;
     }
   }
+
   &-button__disable {
     width: 161px;
     height: 44px;
@@ -34,6 +44,7 @@ ul {
     border: none;
     cursor: pointer;
   }
+
   &-button__active {
     width: 161px;
     height: 44px;
@@ -43,6 +54,7 @@ ul {
     border: none;
     cursor: pointer;
   }
+
   &-link {
     margin-top: 100px;
     @media screen and (min-width: 768px) {
@@ -51,9 +63,37 @@ ul {
     }
   }
 }
+
 .site-footer {
   @media screen and (min-width: 1280px) {
     width: 474px;
+  }
+
+  &__link {
+    padding: 0;
+  }
+
+  &__item {
+    font-family: Titan One;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    color: $list-color;
+    width: 232px;
+    &::before {
+      background-image: url(../images/icons/quotes.svg);
+    }
+    @media screen and (min-width: 1280px) {
+      width: 100%;
+
+      font-family: Titan One;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 34px;
+      letter-spacing: 0.04em;
+    }
   }
 
   &__link {
@@ -139,6 +179,14 @@ ul {
   &__list {
     margin-left: 25px;
     fill: $social-color;
+
+    transition-property: fill;
+    transition: transform 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+    &:hover {
+      fill: $red-color;
+    }
   }
 }
 
