@@ -1,0 +1,39 @@
+.advantage {
+    background-color: $section-bg-color;
+    padding-bottom: 95px;
+    padding-top: 40px;
+    &__list {
+        @extend %list;
+        display: block;
+        margin: -15px;
+        @media screen and (min-width: $tablet){
+            display: flex;
+            margin: -30px;
+        }
+
+        
+    }
+    &__item {
+        margin: 15px;
+        max-width: 230px;
+        @media screen and (min-width: $tablet){
+            margin: 30px;}
+
+    }
+    &__thumb {
+
+    }
+    &__title {
+        margin-top: 25px;
+        font-family: $accent-font;
+        font-size: 36px;
+        color: $red-color;
+
+    }
+    &__text {
+        margin-top: 25px;
+        font-weight: bold;
+        font-size: 12px;
+        color: $black-color;
+    }
+}

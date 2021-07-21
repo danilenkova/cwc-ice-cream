@@ -1,0 +1,66 @@
+<!-- Page Header -->
+<header class="page-header" id="top">
+  <div class="container page-header__container">
+    <!-- Logo -->
+    <img src="./images/icons/logo.svg" alt="logo" class="logo" />
+
+    <!-- Navigation -->
+    <nav class="page-header__nav">
+      <ul class="site-nav">
+        <li class="site-nav__item"><a href="#top" class="site-nav__link">Home</a></li>
+        <li class="site-nav__item"><a href="#about" class="site-nav__link">About us</a></li>
+        <li class="site-nav__item"><a href="#process" class="site-nav__link">How it’s made?</a></li>
+        <li class="site-nav__item"><a href="#products" class="site-nav__link">Our products</a></li>
+        <li class="site-nav__item"><a href="#contacts" class="site-nav__link">Contact</a></li>
+      </ul>
+      <button
+        class="burger burger--spin is-active js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Open menu"
+      >
+        <svg
+          class="burger__icon burger__icon--open"
+          width="20"
+          height="20"
+          aria-label="Mobile Menu Toggle"
+        >
+          <use href="./images/icons/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <button type="button" class="buy-btn" aria-label="buy button">
+        Buy now
+        <svg class="buy-btn__icon" width="20" height="20">
+          <use href="./images/icons/icons.svg#icon-btn-arrow"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+  <!-- Мобильное меню -->
+  <div class="menu-box js-menu-container" id="mobile-menu">
+    <button class="burger js-close-menu" aria-label="Закрыть">
+      <svg class="burger__icon burger__icon--close" width="14" height="14">
+        <use href="./images/icons/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <button type="button" class="buy-btn buy-btn--mobile" aria-label="buy button">
+      Buy now
+      <svg class="buy-btn__icon" width="20" height="20">
+        <use href="./images/icons/icons.svg#icon-btn-arrow"></use>
+      </svg>
+    </button>
+    <div class="mobile-nav">
+      <ul class="mobile-nav__list">
+        <li class="mobile-nav__item"><a href="#top" class="mobile-nav__link">Home</a></li>
+        <li class="mobile-nav__item"><a href="#about" class="mobile-nav__link">About us</a></li>
+        <li class="mobile-nav__item">
+          <a href="#process" class="mobile-nav__link">How it’s made?</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#products" class="mobile-nav__link">Our products</a>
+        </li>
+        <li class="mobile-nav__item"><a href="#contacts" class="mobile-nav__link">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
