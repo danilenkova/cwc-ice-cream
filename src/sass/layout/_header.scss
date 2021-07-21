@@ -7,7 +7,7 @@
     left: 50%;
     transform: translateX(-50%);
     padding: 6px 20px 0;
-    z-index: 100;
+    z-index: 200;
     @media screen and (min-width: 768px) {
       padding: 37px 34px 0;
     }
@@ -45,7 +45,7 @@
 
 .burger {
   @include centeredFlex;
-  z-index: 9999;
+  z-index: 300;
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -57,6 +57,14 @@
   }
   @media (min-width: 1280px) {
     display: none;
+  }
+  &--modal {
+    @include centeredFlex;
+  }
+  &__icon--modal {
+    position: absolute;
+    top: 23px;
+    right: 27px;
   }
   &__icon--close {
     position: absolute;
@@ -160,5 +168,108 @@
     &:focus {
       color: $red-color;
     }
+  }
+}
+
+#toTop {
+  position: fixed;
+  @include centeredFlex;
+  bottom: 30px;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  z-index: 400;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 50%;
+  background-color: $pink-color;
+  opacity: 0;
+  visibility: hidden;
+  &:hover {
+    background-color: $pink-color;
+  }
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    right: calc(2%);
+  }
+}
+
+.btn-top {
+  @include centeredFlex;
+  width: 20px;
+  height: 20px;
+  stroke: $white-color;
+  fill: transparent;
+  transform: rotate(-90deg);
+}
+
+.backdrop--buy {
+  z-index: 200;
+}
+
+.buy-modal {
+  position: relative;
+  opacity: 1;
+  padding: 40px;
+  @media screen and (min-width: 480px) {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    width: 450px;
+    height: 300px;
+  }
+  @media screen and (min-width: 768px) {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 500px;
+    height: 350px;
+  }
+  border-radius: 15px;
+  background-color: $pink-color;
+  display: flex;
+  flex-direction: column;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+.buy-modal__title {
+  font-family: $accent-font;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: $red-color;
+  text-align: center;
+  margin-bottom: 30px;
+  @media screen and (min-width: $tablet) {
+    font-size: 28px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+  }
+}
+
+.buy-modal__image {
+  margin-bottom: 10px;
+}
+
+.buy-modal__text {
+  font-family: $accent-font;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $white-color;
+}
+.choose-product {
+  @include centeredFlex;
+  flex-direction: row;
+  &__item {
+    @include centeredFlex;
+    flex-direction: column;
   }
 }

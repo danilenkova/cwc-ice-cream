@@ -20,6 +20,7 @@
     background-repeat: no-repeat;
     background-size: 171px, 284px;
     background-position: bottom 0 right 32px, bottom 75px right 0;
+    animation: animatedMobile 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1;
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -39,6 +40,7 @@
       background-size: 143px, 168px, 324px, 124px;
       background-position: bottom 0 right 247px, bottom 0 right 34px, bottom 46px right 137px,
         bottom 28px left 34px;
+      animation: animatedTablet 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1;
       @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -58,6 +60,7 @@
       background-size: 236px, 293px, 538px, 188px;
       background-position: bottom 0 right 450px, bottom 0 right 109px, bottom 75px right 267px,
         bottom 45px left 77px;
+      animation: animatedDesc 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1;
       @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -119,7 +122,6 @@
       max-width: 200px;
     }
   }
-
   &__text {
     color: $white-color;
     font-size: 8px;
