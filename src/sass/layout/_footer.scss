@@ -1,204 +1,142 @@
 li {
-  list-style: none;
+    list-style: none;;
 }
 ul {
-  margin: 0;
+    margin: 0;
+    
 }
-
 .footer-section {
-  background-color: $section-bg-color;
+    background-color:  $section-bg-color;
 }
-
 .footer {
-  background-color: $section-bg-color;
+    background-color: $section-bg-color;
 
-  &-button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  &-button__link {
-    padding: 0;
-
+&-link {
+padding-top: 100px;
     @media screen and (min-width: 768px) {
-      display: flex;
-      justify-content: center;
+        display: flex;
+        justify-content: space-between;
     }
-  }
-
-  &-button__list {
-    @media screen and (min-width: 768px) {
-      margin: 10px;
-    }
-  }
-
-  &-button__disable {
-    width: 161px;
-    height: 44px;
-    background-color: $btn-color;
-    color: $white-color;
-    border-radius: 22px;
-    margin-bottom: 10px;
-    border: none;
-    cursor: pointer;
-  }
-
-  &-button__active {
-    width: 161px;
-    height: 44px;
-    background-color: $white-color;
-    color: $btn-color;
-    border-radius: 22px;
-    border: none;
-    cursor: pointer;
-  }
-
-  &-link {
-    margin-top: 100px;
-    @media screen and (min-width: 768px) {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
 }
-
+}
 .site-footer {
-  @media screen and (min-width: 1280px) {
-    width: 474px;
-  }
-
-  &__link {
+    @media screen and (min-width: 1280px) {
+        width: 474px
+    }
+    
+&__link {
     padding: 0;
-  }
+    
+}
+&__item {
+   font-family: Titan One;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 21px;
+   color: $list-color;
+   width: 232px;
+   &::before {
+    background-image: url(../images/icons/quotes.svg);
+}
+   @media screen and (min-width: 1280px) {
+     width: 100%;
+      
+       font-family: Titan One;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: 34px;
+letter-spacing: 0.04em;
 
-  &__item {
+
+   }
+}
+&__team {
+   font-family: Titan One;
+   font-size: 34px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 39px;
+ 
+   text-align: left;
+color: $red-color;
+width: 200px;  
+@media screen and (min-width: 1280px) {
+    width: 100%;
     font-family: Titan One;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21px;
-    color: $list-color;
-    width: 232px;
-    &::before {
-      background-image: url(../images/icons/quotes.svg);
-    }
-    @media screen and (min-width: 1280px) {
-      width: 100%;
+font-size: 58px;
+font-style: normal;
+font-weight: 400;
+line-height: 66px;
+margin-top: 15px;
 
-      font-family: Titan One;
-      font-size: 30px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 34px;
-      letter-spacing: 0.04em;
-    }
-  }
 
-  &__link {
-    padding: 0;
-  }
-  &__item {
-    font-family: Titan One;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21px;
-    color: $list-color;
-    width: 232px;
-    @media screen and (min-width: 1280px) {
-      width: 100%;
-
-      font-family: Titan One;
-      font-size: 30px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 34px;
-      letter-spacing: 0.04em;
-    }
-  }
-  &__team {
-    font-family: Titan One;
-    font-size: 34px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 39px;
-
-    text-align: left;
-    color: $red-color;
-    width: 200px;
-    @media screen and (min-width: 1280px) {
-      width: 100%;
-      font-family: Titan One;
-      font-size: 58px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 66px;
-      margin-top: 15px;
-    }
-  }
+}  
+}
 }
 .social-footer {
-  text-align: right;
-  margin-top: 43px;
-  margin-left: 20px;
-  @media screen and (min-width: 768px) {
-    margin-top: 0;
-  }
-
-  &__title {
-    font-family: DM Sans;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 22px;
-    margin-top: 46px;
     text-align: right;
+    margin-top: 43px;
+    margin-left: 20px;
     @media screen and (min-width: 768px) {
-      margin-top: 0;
-      margin-bottom: 46px;
+        margin-top: 0;
     }
-    @media screen and (min-width: 1280px) {
-      font-size: 16px;
-      line-height: 30px;
-    }
-  }
-  &__item {
+     
+&__title {
+   font-family: DM Sans;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 22px;
+   margin-top: 46px;
+   text-align: right;
+   @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-bottom: 46px;
+}
+@media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 30px;
+}
+}
+&__item {
     padding: 0;
-  }
-  &__tell {
+}
+&__tell {
     color: $red-color;
     cursor: pointer;
-  }
-  &__link {
+}
+&__link {
     display: flex;
     justify-content: flex-end;
     padding: 0;
-  }
-  &__list {
+}
+&__list {
     margin-left: 25px;
     fill: $social-color;
-
-    transition-property: fill;
-    transition: transform 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:focus,
-    &:hover {
-      fill: $red-color;
-    }
-  }
+    
+        transition-property: fill;
+        transition: transform 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:focus, &:hover {
+            fill: $red-color;
+        }
+    
+    
+}
 }
 
+
 .footer-made {
-  border-top: 1px solid #e1e1e1;
-  margin-top: 43px;
-  padding-top: 22px;
-  padding-bottom: 25px;
-  text-align: center;
-  display: block;
-  &__text {
-    color: $text-color;
-    font-weight: 700;
-  }
+    border-top: 1px solid #E1E1E1;
+    margin-top: 43px;
+    padding-top: 22px;
+    padding-bottom: 25px;
+    text-align: center;
+    display: block;
+&__text {
+color: $text-color;
+font-weight: 700;
+}
 }
