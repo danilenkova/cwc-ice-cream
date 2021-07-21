@@ -8,13 +8,21 @@
     <nav class="page-header__nav">
       <ul class="site-nav">
         <li class="site-nav__item"><a href="#top" class="site-nav__link">Home</a></li>
-        <li class="site-nav__item"><a href="#about" class="site-nav__link">About us</a></li>
-        <li class="site-nav__item"><a href="#process" class="site-nav__link">How it’s made?</a></li>
-        <li class="site-nav__item"><a href="#products" class="site-nav__link">Our products</a></li>
-        <li class="site-nav__item"><a href="#contacts" class="site-nav__link">Contact</a></li>
+        <li class="site-nav__item">
+          <a href="#about" class="site-nav__link scrollto">About us</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#process" class="site-nav__link scrollto">How it’s made?</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#products" class="site-nav__link scrollto">Our products</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#contacts" class="site-nav__link scrollto">Contact</a>
+        </li>
       </ul>
       <button
-        class="burger burger--spin is-active js-open-menu"
+        class="burger js-open-menu"
         aria-expanded="false"
         aria-controls="mobile-menu"
         aria-label="Open menu"
@@ -28,7 +36,7 @@
           <use href="./images/icons/icons.svg#icon-burger"></use>
         </svg>
       </button>
-      <button type="button" class="buy-btn" aria-label="buy button">
+      <button type="button" class="buy-btn" aria-label="buy button" buy-modal-open>
         Buy now
         <svg class="buy-btn__icon" width="20" height="20">
           <use href="./images/icons/icons.svg#icon-btn-arrow"></use>
@@ -43,7 +51,7 @@
         <use href="./images/icons/icons.svg#icon-close"></use>
       </svg>
     </button>
-    <button type="button" class="buy-btn buy-btn--mobile" aria-label="buy button">
+    <button type="button" class="buy-btn buy-btn--mobile" aria-label="buy button" buy-modal-open>
       Buy now
       <svg class="buy-btn__icon" width="20" height="20">
         <use href="./images/icons/icons.svg#icon-btn-arrow"></use>
@@ -63,4 +71,44 @@
       </ul>
     </div>
   </div>
+
+  <!-- Modal -->
+
+  <div class="backdrop backdrop--buy is-hidden" buy-modal>
+    <div class="buy-modal">
+      <button
+        type="button"
+        class="burger burger--modal js-close-menu"
+        aria-label="Close"
+        buy-modal-close
+      >
+        <svg class="burger__icon burger__icon--modal" width="18px" height="18px">
+          <use href="./images/icons/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <p class="buy-modal__title">Choose a product</p>
+      <div class="choose-product">
+        <label class="choose-product__item">
+          <img src="./images/products/icecream.png" alt="icecream" class="buy-modal__image" />
+          <p class="buy-modal__text">ice cream</p>
+        </label>
+        <label class="choose-product__item">
+          <img src="./images/products/icecoffee.png" alt="icecoffee" class="buy-modal__image" />
+          <p class="buy-modal__text">ice coffee</p>
+        </label>
+        <label class="choose-product__item">
+          <img src="./images/products/milkshakes.png" alt="milkshakes" class="buy-modal__image" />
+          <p class="buy-modal__text">milkshakes</p>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!-- ToTop button -->
+
+  <a href="#" id="toTop">
+    <svg class="btn-top" width="40" height="40">
+      <use href="./images/icons/icons.svg#icon-btn-arrow"></use>
+    </svg>
+  </a>
 </header>
+<script src="./js/buy-modal.js"></script>
