@@ -10,46 +10,9 @@ ul {
 }
 .footer {
     background-color: $section-bg-color;
-&-button {
-    display: block ;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-   
-   }
-&-button__link{
-    padding: 0;
-   @media screen and (min-width: 768px){
-       display: flex;
-       justify-content: center;
-   }
-}
-&-button__list {
-   @media screen and (min-width: 768px) {
-       margin: 10px;
-   }
-}
-    &-button__disable {  
-    width: 161px;
-    height: 44px;
-    background-color: $btn-color;
-    color: $white-color;
-    border-radius: 22px;
-    margin-bottom: 10px;
-    border: none;
-    cursor: pointer;
-}
-&-button__active {
-   width: 161px;
-   height: 44px;
-   background-color: $white-color;
-   color: $btn-color;
-   border-radius: 22px;
-   border: none;
-   cursor: pointer;
-}
+
 &-link {
-    margin-top: 100px;
+padding-top: 100px;
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-between;
