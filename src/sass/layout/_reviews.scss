@@ -1,15 +1,13 @@
 .reviews {
-  @media screen and(min-width:320px) and(max-width:767px) {
-    margin-top: 80px;
-    margin-bottom: 289px;
+  @extend %section;
+  @media screen and(max-width:767px) {
+    padding-bottom: 120px;
   }
-  @media screen and(min-width:768px) and(max-width:1279px) {
-    margin-top: 121px;
-    margin-bottom: 197px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 150px;
   }
-  @media screen and(min-width:1280px) {
-    margin-top: 123px;
-    margin-bottom: 234px;
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 180px;
   }
 }
 .reviews__img {
@@ -118,12 +116,15 @@
   line-height: 1.86;
   @media screen and(min-width:320px) and(max-width:767px) {
     font-size: 12px;
+    margin-bottom: 30px;
   }
   @media screen and(min-width:768px) and(max-width:1279px) {
     font-size: 16px;
+    margin-bottom: 35px;
   }
   @media screen and(min-width:1280px) {
     font-size: 20px;
+    margin-bottom: 35px;
   }
 }
 .reviews__contact::before {
@@ -138,12 +139,41 @@
     padding-bottom: 15px;
   }
 }
-.reviews__contact::after {
-  content: url('../images/icons/reviews-after.svg');
-  @media screen and(min-width:320px) and(max-width:767px) {
-    padding-top: 30px;
-  }
-  @media screen and(min-width:768px) {
-    padding-top: 35px;
+.reviews__link {
+  display: flex;
+  width: 72px;
+  margin: 0 auto;
+  padding: 0;
+  & li:not(:last-child) {
+    margin-right: 18px;
   }
 }
+.reviews__icon {
+  display: flex;
+  height: 12px;
+  width: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.reviews__icon:nth-child(1) {
+  background-image: url('../images/icons/icon-home.svg');
+}
+.reviews__icon:nth-child(2) {
+  background-image: url('../images/icons/Ellipse.svg');
+}
+.reviews__icon:nth-child(3) {
+  background-image: url('../images/icons/Ellipse.svg');
+}
+/* @media screen and(min-width:320px) and(max-width:767px) {
+    margin-top: 80px;
+    margin-bottom: 289px;
+  }
+  @media screen and(min-width:768px) and(max-width:1279px) {
+    margin-top: 121px;
+    margin-bottom: 197px;
+  }
+  @media screen and(min-width:1280px) {
+    margin-top: 123px;
+    margin-bottom: 234px;
+  }
+  */
