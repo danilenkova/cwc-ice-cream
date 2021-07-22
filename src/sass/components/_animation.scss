@@ -1,30 +1,36 @@
-@keyframes animatedMobile {
-  from {
-    background-position: bottom 0 left -171px, bottom 75px right -284px;
-  }
-  to {
-    background-position: bottom 0 right 32px, bottom 75px right 0;
-  }
-}
-
-@keyframes animatedTablet {
-  from {
-    background-posiion: bottom 0 left -143px, bottom 0 right -168px, bottom 46px right -324px,
-      bottom 28px left -124px;
-  }
-  to {
-    background-position: bottom 0 right 247px, bottom 0 right 34px, bottom 46px right 137px,
-      bottom 28px left 34px;
+@media screen and (max-width: 767px) {
+  @keyframes animatedMobile {
+    from {
+      background-position: bottom 0 left -171px, bottom 75px right -284px;
+    }
+    to {
+      background-position: bottom 0 right 32px, bottom 75px right 0;
+    }
   }
 }
 
-@keyframes animatedDesc {
-  from {
-    background-position: bottom 0 right 550px, bottom 0 right -293px, bottom 75px right 167px,
-      bottom 45px left -188px;
+@media screen and (min-width: $tablet) {
+  @keyframes animatedTablet {
+    from {
+      background-position: bottom 0 right 347px, bottom 0 right -168px, bottom 46px right 37px,
+        bottom 28px left -124px;
+    }
+    to {
+      background-position: bottom 0 right 247px, bottom 0 right 34px, bottom 46px right 137px,
+        bottom 28px left 34px;
+    }
   }
-  to {
-    background-position: bottom 0 right 450px, bottom 0 right 109px, bottom 75px right 267px,
-      bottom 45px left 77px;
+}
+
+@media screen and (min-width: $desktop) {
+  @keyframes animatedDesc {
+    from {
+      background-position: bottom 0 right 550px, bottom 0 right -293px, bottom 75px right 167px,
+        bottom 45px left -188px;
+    }
+    to {
+      background-position: bottom 0 right 450px, bottom 0 right 109px, bottom 75px right 267px,
+        bottom 45px left 77px;
+    }
   }
 }
