@@ -203,6 +203,9 @@
   align-items: flex-end;
   &__item {
     position: relative;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
     &::before {
       position: absolute;
       display: block;
