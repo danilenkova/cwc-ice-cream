@@ -76,21 +76,13 @@ margin-top: 15px;
 }
 }
 .social-footer {
-    text-align: right;
-    margin-top: 43px;
-    margin-left: 20px;
-    @media screen and (min-width: 768px) {
-        margin-top: 0;
-    }
-     
+
 &__title {
-   font-family: DM Sans;
-   font-size: 12px;
-   font-style: normal;
    font-weight: 700;
-   line-height: 22px;
-   margin-top: 46px;
    text-align: right;
+   &:first-child {
+margin-bottom: 46px;
+   }
    @media screen and (min-width: 768px) {
     margin-top: 0;
     margin-bottom: 46px;
@@ -102,18 +94,30 @@ margin-top: 15px;
 }
 &__item {
     padding: 0;
+    margin-top: 46px;
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+    }
 }
 &__tell {
     color: $red-color;
     cursor: pointer;
 }
+&__team {
+    margin-right: 25px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
 &__link {
     display: flex;
     justify-content: flex-end;
     padding: 0;
+    
+   
 }
 &__list {
-    margin-left: 25px;
+    
     fill: $social-color;
     
         transition-property: fill;
