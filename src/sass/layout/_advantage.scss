@@ -2,10 +2,6 @@
     background-color: $section-bg-color;
     padding-bottom: 95px;
     padding-top: 0px;
-    & h2 {
-        visibility: hidden;
-        font-size: 0;
-    }
     &__list {
         @extend %list;
         display: flex;
@@ -19,8 +15,6 @@
             gap: 30px;
             flex-wrap: nowrap;
         }
-
-        
     }
     &__item--first {
         max-width: 230px;
