@@ -1,6 +1,9 @@
 .gallery {
   background-image: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
 }
+.gallery__container {
+  padding: 0;
+}
 .gallery__img {
   display: block;
   width: 100%;
